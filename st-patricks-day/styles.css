@@ -1,3 +1,6 @@
+body {
+	background: whitesmoke;
+}
 @-webkit-keyframes fillAction {
 	0% {
 		transform: scaleY(0);
