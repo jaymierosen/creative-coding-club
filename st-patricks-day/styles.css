@@ -1,0 +1,31 @@
+/* mug */
+.mug {
+	fill:#F9D812;
+}
+/* liquid */
+.liquid {
+	fill:#ffffff;
+	transition: 0.08s ease-in;
+	-o-transition: 0.8s ease-in;
+	-ms-transition: 0.8s ease-in;
+	-moz-transition: 0.8s ease-in;
+	-webkit-transition:0.8s ease-in;
+}
+/* foam */
+.foam {
+	fill:#FFFBC5;
+}
+.fill:hover {
+	animation: fillup .5s infinite ease-in;;
+}
+@keyframes fillup {
+	0% { 
+		fill: #d6952d;
+	}
+	50% { 
+		fill: #d6952d;
+	}
+	100% { 
+		fill: #d6952d;
+	}
+}
