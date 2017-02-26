@@ -2,30 +2,23 @@
 .mug {
 	fill:#F9D812;
 }
-/* liquid */
-.liquid {
-	fill:#ffffff;
-	transition: 0.08s ease-in;
-	-o-transition: 0.8s ease-in;
-	-ms-transition: 0.8s ease-in;
-	-moz-transition: 0.8s ease-in;
-	-webkit-transition:0.8s ease-in;
-}
 /* foam */
 .foam {
 	fill:#FFFBC5;
 }
-.fill:hover {
-	animation: fillup .5s infinite ease-in;;
+/* liquid */
+.beer-fill {
+	-webkit-animation-name: fillAction;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: cubic-bezier(.2, .6, .8, .4);
+	-webkit-animation-duration: 4s;
+	-webkit-animation-fill-mode: forwards;
 }
-@keyframes fillup {
-	0% { 
-		fill: #d6952d;
+@-webkit-keyframes fillAction {
+	0% {
+		-webkit-transform: translate(0, 150px);
 	}
-	50% { 
-		fill: #d6952d;
-	}
-	100% { 
-		fill: #d6952d;
+	100% {
+		-webkit-transform: translate(0, 10px);
 	}
 }
