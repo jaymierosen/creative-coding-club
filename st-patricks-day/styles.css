@@ -1,21 +1,5 @@
-body {
-	background: whitesmoke;
-}
-@-webkit-keyframes fillAction {
-	0% {
-		transform: scaleY(0);
-	}
-	100% {
-	 	transform: scaleY(1);
-	}
-}
-@-webkit-keyframes bubbleAction {
-	0% {
-		opacity: 0;
-	}
-	100% {
-	 	opacity: 1;
-	}
+.activate {
+	background: pink;
 }
 .beer-wrap {
 	width: 454px;
@@ -37,4 +21,30 @@ body {
 	bottom: 50px;
 	left: 23%;
 	z-index: -1;
+}
+button#fill {
+	width: 454px;
+	height: 50px;
+	background-color: #9ACD32;
+	border: none;
+	color: white;
+	font-size: 20px;
+	border-radius: 8px;
+	text-transform: uppercase;
+}
+@-webkit-keyframes fillAction {
+	0% {
+		transform: scaleY(0);
+	}
+	100% {
+	 	transform: scaleY(1);
+	}
+}
+@-webkit-keyframes bubbleAction {
+	0% {
+		opacity: 0;
+	}
+	100% {
+	 	opacity: 1;
+	}
 }
