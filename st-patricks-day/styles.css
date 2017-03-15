@@ -1,10 +1,14 @@
+body {
+	font-family: Helvetica, sans-serif;
+}
 .activate {
-	background: pink;
+	background:white;
 }
 .beer-wrap {
 	width: 454px;
 	height: 511px;
 	position: relative;
+	margin: 0 auto;
 }
 .foam {
 	opacity: 0;
@@ -13,7 +17,6 @@
 .beer-fill {
 	animation: fillAction 15s infinite;
 	transform-origin: 0% 100%;
-	background: #D29D1D;
 	height: 266px;
 	width: 188px;
 	transform: scale(1, 1) translateX(-50%);
@@ -22,22 +25,31 @@
 	left: 23%;
 	z-index: -1;
 }
-button#fill {
-	width: 454px;
+.button-container {
+	margin: 0 auto;
+	text-align: center;
+}
+#fill-btn,
+#clear,
+#green-btn {
+	width: 285px;
 	height: 50px;
-	background-color: #9ACD32;
+	background: #555555;
 	border: none;
 	color: white;
-	font-size: 20px;
 	border-radius: 8px;
-	text-transform: uppercase;
+	margin: 10px;
+	font-size: 14px;
+	cursor: pointer;
 }
 @-webkit-keyframes fillAction {
 	0% {
 		transform: scaleY(0);
+		/*opacity: 0 bubbleAction;*/
 	}
 	100% {
 	 	transform: scaleY(1);
+	 	/*opacity: 1 bubbleAction;*/
 	}
 }
 @-webkit-keyframes bubbleAction {
